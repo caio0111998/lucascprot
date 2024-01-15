@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Upsell</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f1;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .progress-wrapper {
+            position: relative;
+        }
+
+        .banner {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .progress-bar {
+            width: 81%;
+            height: 30px;
+            background: linear-gradient(to right, #2ecc71, #27ae60);
+            position: fixed;
+            top: 80px; /* Ajuste conforme necessário */
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .progress-fill {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px;
+            margin-top: 50px;
+            flex: 1;
+        }
+
+        .message {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            text-decoration: none;
+            background-color: #2ecc71;
+            color: #fff;
+            border-radius: 5px;
+            animation: neon 1.5s infinite alternate;
+        }
+
+        .whatsapp-icon {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .footer-text {
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        @keyframes neon {
+            0% {
+                box-shadow: 0 0 20px #2ecc71;
+            }
+            100% {
+                box-shadow: 0 0 20px #2ecc71, 0 0 30px #2ecc71, 0 0 40px #2ecc71;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-wrapper">
+        <div class="banner">Parabéns por adquirir o Aulão Secreto!</div>
+        <div class="progress-bar">
+            <div class="progress-fill">81% de progresso...</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="message">
+            Falta apenas um detalhe para concluir a sua compra. Clique no botão abaixo e entre no grupo exclusivo do Whatsapp, para não perder o aulão e diversas novidades!
+        </div>
+        <a href="link-para-o-grupo" class="whatsapp-button">
+            <span class="whatsapp-icon">&#x1F4AC;</span> Clique aqui para receber informações
+        </a>
+    </div>
+
+    <div class="footer-text">
+        LUCAS C PROT - Todos os direitos reservados.
+    </div>
+</body>
+</html>
