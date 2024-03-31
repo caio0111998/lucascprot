@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Usuário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-x: auto; /* Permite a rolagem horizontal */
+            white-space: nowrap; /* Impede que os módulos quebrem em várias linhas */
+            text-align: center;
+            display: grid; /* Usa o layout de grade */
+            grid-template-columns: repeat(4, 1fr); /* 4 colunas por página */
+            grid-gap: 20px; /* Espaçamento entre os módulos */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .module {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            cursor: pointer; /* Mostra que os módulos são clicáveis */
+            transition: transform 0.3s ease; /* Adiciona uma transição suave ao passar o mouse sobre os módulos */
+        }
+        .module img {
+            max-width: 100%;
+            height: 300px; /* Ajusta a altura das imagens */
+            border-radius: 8px;
+        }
+        .module:hover {
+            transform: scale(1.05); /* Aumenta o tamanho do módulo ao passar o mouse */
+        }
+        .module a {
+            color: #fff; /* Altera a cor do link para branco */
+            text-decoration: none; /* Remove o sublinhado dos links */
+        }
+        .banner {
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 8px;
+            width: 100%;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px; /* Reduz o preenchimento para telas menores */
+                grid-template-columns: repeat(2, 1fr); /* 2 colunas por página em telas menores */
+            }
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1e1e1e;
+            color: #ccc;
+            padding: 10px 0;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao Painel do Usuário</h1>
+    <div class="banner">
+        <!-- Banner de Imagem -->
+        <img src="https://via.placeholder.com/1920x300" alt="Banner">
+    </div>
+    <div class="container">
+        <!-- Módulos -->
+        <a href="aula1.html" class="module">
+            <img src="https://via.placeholder.com/200x300" alt="Capa do Módulo 1">
+            <h2>Aquecimento</h2>
+        </a>
+        <a href="aula2.html" class="module">
+            <img src="https://via.placeholder.com/200x300" alt="Capa do Módulo 2">
+            <h2>Investidor Raso</h2>
+        </a>
+        <a href="aula3.html" class="module">
+            <img src="https://via.placeholder.com/200x300" alt="Capa do Módulo 3">
+            <h2>Primeira Batalha</h2>
+        </a>
+        <a href="aula4.html" class="module">
+            <img src="https://via.placeholder.com/200x300" alt="Capa do Módulo 4">
+            <h2>Patente I</h2>
+        </a>
+        <a href="aula5.html" class="module">
+            <img src="https://via.placeholder.com/200x300" alt="Capa do Módulo 5">
+            <h2>Patente II</h2>
+        </a>
+        <a href="aula6.html" class="module">
+            <img src="https://via.placeholder.com/200x300" alt="Capa do Módulo 6">
+            <h2>Método Sniper na Prática</h2>
+        </a>
+        <a href="aula7.html" class="module">
+            <img src="https://via.placeholder.com/200x300" alt="Capa do Módulo 7">
+            <h2>Pensando como um Profissional</h2>
+        </a>
+        <a href="aula8.html" class="module">
+            <img src="https://via.placeholder.com/200x300" alt="Capa do Módulo 8">
+            <h2>Lives Ao Vivo</h2>
+        </a>
+        <a href="aula9.html" class="module">
+            <img src="https://via.placeholder.com/200x300" alt="Capa do Módulo 9">
+            <h2>Bônus</h2>
+        </a>
+        <a href="aula10.html" class="module">
+            <img src="https://via.placeholder.com/200x300" alt="Capa do Módulo 10">
+            <h2>Mesas Proprietárias (Em breve)</h2>
+        </a>
+    </div>
+    <footer>XWolf Sales</footer>
+</body>
+</html>
